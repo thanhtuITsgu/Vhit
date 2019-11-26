@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=
+        "urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+
+        <add id="Vhit_StockManagement::Report_StockManagement"
+             title="Report Management"
+             module="Vhit_StockManagement"
+             sortOrder="20"
+             resource="Vhit_StockManagement::Report_StockManagement"
+             parent="Magento_Reports::report"
+        />
+        <!-- START: new node -->
+        <add id="Vhit_StockManagement::Report_Pending"
+             title="Report Product Pending"
+             module="Vhit_StockManagement"
+             sortOrder="15"
+             resource="Vhit_StockManagement::Report_Pending"
+             parent="Vhit_StockManagement::Report_StockManagement"
+             action="stockmanagement/report"
+        />
+    </menu>
+</config>
