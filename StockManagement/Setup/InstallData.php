@@ -52,6 +52,7 @@ class InstallData implements InstallDataInterface
 
         $resource = [
             'Magento_Backend::admin',
+            'Magento_Backend::dashboard',
             'Magento_Catalog::catalog',
             'Magento_Catalog::catalog_inventory',
             'Magento_Catalog::products',
